@@ -27,7 +27,7 @@ Research Interests
 Grants
 ------------------------
 
-- NSFC Yound Fund (Class C): Jan. 2026 - Dec. 2028
+- NSFC Young Scientist Fund (Class C): Jan. 2026 - Dec. 2028
 
 
 
