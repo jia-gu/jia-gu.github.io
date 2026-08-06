@@ -1,8 +1,8 @@
 ---
 layout: listing
-title: "Research"
+title: "Papers"
 permalink: /publications/
-excerpt: "Research"
+excerpt: "Papers"
 ---
 
 <p class="listing-intro">You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</p>

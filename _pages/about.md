@@ -26,6 +26,20 @@ redirect_from:
   </ul>
 </section>
 
+<section id="teaching" class="content-section" aria-labelledby="teaching-heading">
+  <h2 id="teaching-heading">Teaching</h2>
+  <ul class="teaching-list">
+    <li>
+      <span class="teaching-list__course">Asymptotic Statistics</span>
+      <span class="teaching-list__meta">Spring 2025 · Graduate Course</span>
+    </li>
+    <li>
+      <span class="teaching-list__course">Topics on Engineering Frontier Technology</span>
+      <span class="teaching-list__meta">Fall 2024 · Graduate Course</span>
+    </li>
+  </ul>
+</section>
+
 <section class="content-section" aria-labelledby="grants-heading">
   <h2 id="grants-heading">Grants</h2>
   <ul class="grant-list">

@@ -1,7 +1,5 @@
 main:
   - title: "Home"
     url: /
-  - title: "Research"
+  - title: "Papers"
     url: /publications/
-  - title: "Teaching"
-    url: /teaching/

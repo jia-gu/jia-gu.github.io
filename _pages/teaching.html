@@ -1,13 +1,4 @@
 ---
-layout: listing
-title: "Teaching"
 permalink: /teaching/
-excerpt: "Teaching"
+redirect_to: /#teaching
 ---
-
-{% assign courses = site.teaching | sort: "date" | reverse %}
-<div class="collection-list collection-list--teaching">
-  {% for post in courses %}
-    {% include teaching-card.html post=post %}
-  {% endfor %}
-</div>
