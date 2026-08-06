@@ -108,7 +108,7 @@ h3 {
 
 .site-header__inner {
   width: min(calc(100% - 2rem), var(--page-width));
-  min-height: 4.75rem;
+  min-height: 5.15rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -119,7 +119,7 @@ h3 {
 .site-brand {
   color: var(--color-text);
   font-family: var(--font-serif);
-  font-size: 1.18rem;
+  font-size: 1.35rem;
   font-weight: 700;
   text-decoration: none;
   white-space: nowrap;
@@ -128,7 +128,7 @@ h3 {
 .site-nav__list {
   display: flex;
   align-items: center;
-  gap: 1.8rem;
+  gap: 2rem;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -139,7 +139,7 @@ h3 {
   display: block;
   padding: 0.4rem 0;
   color: var(--color-muted);
-  font-size: 0.92rem;
+  font-size: 1.02rem;
   font-weight: 650;
   text-decoration: none;
 }
@@ -165,7 +165,7 @@ h3 {
   gap: 0.6rem;
   padding: 0.5rem 0;
   color: var(--color-text);
-  font: 650 0.92rem/1 var(--font-sans);
+  font: 650 1rem/1 var(--font-sans);
   border: 0;
   background: transparent;
   cursor: pointer;
@@ -357,11 +357,13 @@ h3 {
 }
 
 .interest-list li {
-  padding: 1rem 1.1rem;
-  font-size: 1.08rem;
+  padding: 1.1rem 1.25rem;
+  font-size: clamp(1.14rem, 1.25vw, 1.22rem);
+  font-weight: 620;
   border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
   border-radius: 0.3rem;
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.72);
 }
 
 .grant-list {
@@ -519,7 +521,7 @@ h3 {
 
 @media (max-width: 44.99rem) {
   .site-header__inner {
-    min-height: 4.25rem;
+    min-height: 4.5rem;
     flex-wrap: wrap;
     gap: 0;
   }
