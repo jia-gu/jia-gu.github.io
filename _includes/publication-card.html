@@ -1,0 +1,17 @@
+{% assign publication = include.post %}
+<article class="collection-entry publication-entry">
+  <p class="collection-entry__year">{{ publication.year }}</p>
+  <div class="collection-entry__body">
+    <h2><a href="{{ publication.url | relative_url }}">{{ publication.title }}</a></h2>
+    {% if publication.author %}<p class="collection-entry__authors">{{ publication.author }}</p>{% endif %}
+    {% if publication.conf %}<p class="collection-entry__meta">{{ publication.conf }}{% if publication.conf_shortname %} ({{ publication.conf_shortname }}){% endif %}, {{ publication.year }}</p>{% endif %}
+    {% if publication.additional %}
+      <nav class="resource-links" aria-label="Resources for {{ publication.title | strip_html | escape }}">
+        {% if publication.paperurl %}<a href="{{ publication.paperurl | strip }}">Paper</a>{% endif %}
+        {% if publication.codeurl %}<a href="{{ publication.codeurl | strip }}">Code</a>{% endif %}
+        {% if publication.projecturl %}<a href="{{ publication.projecturl | strip }}">Project Page</a>{% endif %}
+        {% if publication.posterlink %}<a href="{{ publication.posterlink | strip }}">Poster</a>{% endif %}
+      </nav>
+    {% endif %}
+  </div>
+</article>

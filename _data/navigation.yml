@@ -1,11 +1,9 @@
-# main links links
 main:
+  - title: "Home"
+    url: /
   - title: "Research"
     url: /publications/
-
   - title: "Teaching"
-    url: /teaching/  
-
-  - title: "CV"  
+    url: /teaching/
+  - title: "CV"
     url: /files/CV-20251004.pdf
-

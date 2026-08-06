@@ -1,0 +1,28 @@
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+      <span>Menu</span>
+      <span class="nav-toggle__icon" aria-hidden="true"></span>
+    </button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <ul id="primary-navigation" class="site-nav__list">
+        {% for link in site.data.navigation.main %}
+          {% assign is_current = false %}
+          {% if link.url == '/' and page.url == '/' %}
+            {% assign is_current = true %}
+          {% elsif link.url == '/publications/' and page.collection == 'publications' %}
+            {% assign is_current = true %}
+          {% elsif link.url == '/teaching/' and page.collection == 'teaching' %}
+            {% assign is_current = true %}
+          {% elsif link.url != '/' and page.url == link.url %}
+            {% assign is_current = true %}
+          {% endif %}
+          <li>
+            <a href="{{ link.url | relative_url }}"{% if is_current %} aria-current="page"{% endif %}>{{ link.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

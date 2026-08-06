@@ -1,16 +1,15 @@
 ---
-layout: archive
+layout: listing
 title: "Research"
 permalink: /publications/
-author_profile: true
+excerpt: "Research"
 ---
 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
+<p class="listing-intro">You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</p>
 
-{% include base_path %}
-<hr width="80%">
-{% for post in site.publications reversed %}
-  {% include archive-pub.html %}
-{% endfor %}
+{% assign publications = site.publications | sort: "year" | reverse %}
+<div class="collection-list">
+  {% for post in publications %}
+    {% include publication-card.html post=post %}
+  {% endfor %}
+</div>

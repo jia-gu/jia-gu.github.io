@@ -1,12 +1,13 @@
 ---
-layout: archive
+layout: listing
 title: "Teaching"
 permalink: /teaching/
-author_profile: true
+excerpt: "Teaching"
 ---
 
-{% include base_path %}
-
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+{% assign courses = site.teaching | sort: "date" | reverse %}
+<div class="collection-list collection-list--teaching">
+  {% for post in courses %}
+    {% include teaching-card.html post=post %}
+  {% endfor %}
+</div>

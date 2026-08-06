@@ -1,0 +1,8 @@
+{% assign course = include.post %}
+<article class="collection-entry teaching-entry">
+  <p class="collection-entry__year">{{ course.date | date: "%Y" }}</p>
+  <div class="collection-entry__body">
+    <h2><a href="{{ course.url | relative_url }}">{{ course.title }}</a></h2>
+    <p class="collection-entry__meta">{{ course.type }}, <em>{{ course.venue }}</em>, {{ course.date | date: "%Y" }}</p>
+  </div>
+</article>
