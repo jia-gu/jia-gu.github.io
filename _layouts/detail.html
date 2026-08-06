@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<main id="main-content" class="page-shell">
+  <article class="page-content detail-page">
+    <header class="page-heading detail-page__heading">
+      <h1>{{ page.title }}</h1>
+      {% if page.collection == 'publications' %}
+        {% if page.author %}<p class="detail-page__authors">{{ page.author }}</p>{% endif %}
+        {% if page.conf %}<p class="detail-page__meta">{{ page.conf }}{% if page.conf_shortname %} ({{ page.conf_shortname }}){% endif %}, {{ page.year }}</p>{% endif %}
+      {% elsif page.collection == 'teaching' %}
+        <p class="detail-page__meta">{{ page.type }}, <em>{{ page.venue }}</em>, {{ page.date | date: "%Y" }}</p>
+      {% endif %}
+    </header>
+
+    {% if page.collection == 'publications' and page.additional %}
+      <nav class="resource-links" aria-label="Publication resources">
+        {% if page.paperurl %}<a href="{{ page.paperurl | strip }}">Paper</a>{% endif %}
+        {% if page.codeurl %}<a href="{{ page.codeurl | strip }}">Code</a>{% endif %}
+        {% if page.projecturl %}<a href="{{ page.projecturl | strip }}">Project Page</a>{% endif %}
+        {% if page.posterlink %}<a href="{{ page.posterlink | strip }}">Poster</a>{% endif %}
+      </nav>
+    {% endif %}
+
+    {{ content }}
+  </article>
+</main>

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<main id="main-content">
+  <section class="profile-hero" aria-labelledby="profile-title">
+    <div class="profile-hero__inner">
+      <div class="profile-hero__content">
+        <h1 id="profile-title">{{ page.title }}</h1>
+        <p class="profile-hero__bio">{{ site.author.bio }}</p>
+        <ul class="profile-links" aria-label="Profile information">
+          <li>{{ site.author.location }}</li>
+          <li><a href="{{ site.author.googlescholar }}">Google Scholar</a></li>
+        </ul>
+      </div>
+      <figure class="profile-hero__portrait">
+        <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" width="1620" height="1080">
+      </figure>
+    </div>
+  </section>
+
+  <article class="page-content page-content--home">
+    {{ content }}
+  </article>
+</main>
