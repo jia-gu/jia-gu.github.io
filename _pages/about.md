@@ -30,6 +30,18 @@ redirect_from:
   <h2 id="teaching-heading">Teaching</h2>
   <ul class="teaching-list">
     <li>
+      <span class="teaching-list__course">Probability</span>
+      <span class="teaching-list__meta">Fall 2026 · Undergraduate Course</span>
+    </li>
+    <li>
+      <span class="teaching-list__course">Asymptotic Statistics</span>
+      <span class="teaching-list__meta">Spring 2026 · Graduate Course</span>
+    </li>
+    <li>
+      <span class="teaching-list__course">Topics on Engineering Frontier Technology</span>
+      <span class="teaching-list__meta">Spring 2026 · Graduate Course</span>
+    </li>
+    <li>
       <span class="teaching-list__course">Asymptotic Statistics</span>
       <span class="teaching-list__meta">Spring 2025 · Graduate Course</span>
     </li>
