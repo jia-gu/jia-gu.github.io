@@ -5,6 +5,6 @@ permalink: /publication/Research_2023
 author: Zhu, Y., <strong>Gu, J</strong>, Qiu, Y., Chen, S.X.
 conf: 'Research'
 year: 2023
-paperurl: /publications/papers/Research_2023.pdf
+paperurl: /publication/papers/Research_2023.pdf
 additional: true
 ---
