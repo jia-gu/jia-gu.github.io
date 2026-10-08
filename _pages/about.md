@@ -12,8 +12,10 @@ redirect_from:
   <h2 id="about-heading">About Me</h2>
   <p>Jia Gu is an assistant professor at the <a href="http://cds.zju.edu.cn/">Center for Data Science</a>, Zhejiang University.</p>
   <p>Prior to joining the CDS, he obtained a PhD in statistics from the <a href="https://www.stat-center.pku.edu.cn/">Center for Statistical Science</a> at Peking University, supervised by Professor <a href="https://www.songxichen.com/">Song Xi Chen</a>.</p>
-  <p>From Aug. 2025 to Feb. 2026, he will be  at the Wharton School of the University of Pennsylvania as a visiting scholar, hosted by Professor <a href="http://www-stat.wharton.upenn.edu/~tcai/">Tony Cai</a>.</p>
-  <p>You can also download my <a href="{{ '/files/CV-20251004.pdf' | relative_url }}">current CV</a>.</p>
+  <p>From August 2025 to February 2026, he was a visiting scholar at the Wharton School, University of Pennsylvania, hosted by Professor <a href="http://www-stat.wharton.upenn.edu/~tcai/">Tony Cai. 
+  In August 2026, he was a visiting scholar in the Department of Statistics at the University of Warwick, hosted by Professor <a href="https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/yu/">Yi Yu.
+  </a>.</p>
+  <p>You can also download his <a href="{{ '/files/CV-20251004.pdf' | relative_url }}">current CV</a>.</p>
 </section>
 
 <section class="content-section" aria-labelledby="interests-heading">
@@ -22,6 +24,7 @@ redirect_from:
     <li>Distributed Statistical Inference</li>
     <li>Federated Learning</li>
     <li>Differential Privacy</li>
+    <li>Stochastic Optimization and Online Statistical Inference</li>
     <li>Data Fusion</li>
   </ul>
 </section>
